@@ -1,0 +1,557 @@
+/*
+      Major Sixth Modular Scale:
+      http://www.modularscale.com/?22&px&1.667&web&text
+    */
+body {
+  line-height: 1.182em; /* 26px / ~ 120% */
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  background-color: #F5FAE3;
+  padding: 10px;
+  }
+html {
+  text-align: center;
+  }
+img {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.gallery {
+  border: 10px solid darkslategray;
+  padding: 10px ;
+  }
+div.gallery:hover {
+  border: 1px solid;
+  }
+div.gallery img {
+  width: 100%;
+  height: auto;
+  }
+div.desc {
+  padding: 15px;
+  text-align: center;
+  }
+.dropbtn {
+  background-color: teal;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  overflow: auto;
+  z-index: -1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+.dropdown a:hover {background-color: darkslategray;}
+.show {display: block;}
+input[type=text], select, textarea{
+  border-radius: 4px;
+}
+/* 1st header */
+h1 {
+  text-align: center;
+  padding: 1em;
+  font: 36px monospace;
+  border: 5px solid;
+  border-radius: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-color: teal;
+}
+/* paragraph description */
+p {
+  text-align: center;
+  font: 30px serif;
+  font-style: italic;
+  padding: 2px;
+  margin-bottom: 2em;
+  color: black;
+}
+/* HTML user input form */
+form {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  padding: 2em;
+  border: 5px solid black;
+  border-radius: 2em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: teal;
+}
+/* list tags within my HTML form */
+ul {
+  list-style: none;
+  padding: 3px;
+  margin: 0 auto;
+}
+a:hover {
+  background-color: white;
+}
+form li + li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* labels that are above the input boxes */
+label {
+  display: inline-block;
+  width: 90%;
+  text-align: center;
+}
+/* the text boxes that the users are inputting data in */
+input {
+  font: 18px monospace;
+  width: 90%;
+  box-sizing: border-box;
+  border: 1px solid darkslategray;
+}
+input:focus {
+  border-color: #000;
+}
+/* the submit and display user buttons */
+.button {
+  width: 100%;
+  text-align: center;
+}
+button {
+  color: blue;
+}
+.personagem {
+  color: black;
+  color: white;
+  background-color: teal;
+}
+/* Reveal Button */
+.chivecc {
+  text-align: center;
+  background-color: teal;
+  color: black;
+  cursor: pointer;
+  width: 90%;
+  transition: .1s;
+  border: 5px inset darkslategray;
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.innerSect {
+  padding: 15px 0;
+  display: none;
+  overflow: hidden;
+}
+.active, .chivecc:hover {
+  background-color: blue;
+}
+input[type=submit]:hover {
+  background-color:blue;
+}
+textarea {
+  height:100px;
+  width: 55%;
+}
+/* smart devices media-query */
+@media screen and (min-width: 480px) {
+  div.responsive {
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    background-color: tomato;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: auto;
+  }
+  p {
+    text-align: center;
+    font: 18px serif;
+    padding: 3px;
+    margin-bottom: 3em;
+    color: darkslategray;
+  }
+  input:focus {
+    border-color: #000;
+  }
+  input {
+    font: 18px monospace;
+    width: 90%;
+    box-sizing: border-box;
+    border: 3px solid darkslategray;
+    height: 2em;
+  }
+  input[type=submit] {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  textarea {
+    width: 90%;
+  }
+  h2 {
+    text-align: center;
+    font: 12px serif;
+    padding: 3px;
+    margin-bottom: 3em;
+  }
+  form {
+    background-color: tomato;
+  }
+  .personagem {
+    color: darkslategray;
+    background-color: tomato;
+  }
+  .chivecc {
+    text-align: center;
+    background-color: tomato;
+    color: darkslategray;
+    cursor: pointer;
+    width: 90%;
+    transition: .1s;
+    border: 5px inset gray;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .nav {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 5px solid gray;
+    background-color: tomato;
+    text-transform: uppercase;
+  }
+  .nav li {
+    display:inline-block;
+  }
+  .nav a {
+    color:black;
+    display:inline-block;
+    padding:12px;
+  }
+  /* Adding in our hamburger menu CSS */
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+  #menuToggle a:hover
+  {
+    color: tomato;
+  }
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  /*
+   * Oh yeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu
+  {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding-left: 25px;
+    padding-top: 50px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+}
+/* tablet devices media-query */
+@media screen and (min-width: 768px) {
+  div.responsive {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  h1 {
+    background-color: turquoise;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+  }
+  p {
+    text-align: center;
+    font: 20px serif;
+    padding: 3px;
+    margin-bottom: 3em;
+    color: black;
+  }
+  h2 {
+    text-align: center;
+    font: 15px serif;
+    padding: 3px;
+    margin-bottom: 3em;
+  }
+  button {
+    color: black;
+  }
+  input:focus {
+    border-color: #000;
+  }
+  input {
+    font: 18px monospace;
+    width: 90%;
+    box-sizing: border-box;
+    border: 3px solid grey;
+    height: 2em;
+  }
+  input[type=text] {
+    width: 55%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  form {
+    background-color: turquoise;
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input[type=submit] {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  textarea {
+    width: 55%;
+  }
+  .nav {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 5px solid gray;
+    background-color: turquoise;
+    text-transform: uppercase;
+  }
+  .nav li {
+    display:inline-block;
+  }
+  .nav a {
+    color:black;
+    display:inline-block;
+    padding:12px;
+  }
+  .personagem {
+    color: black;
+    background-color: turquoise;
+  }
+  .chivecc {
+    text-align: center;
+    background-color: turquoise;
+    color: black;
+    cursor: pointer;
+    width: 90%;
+    transition: .1s;
+    border: 5px inset gray;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+/* desktop/laptop/PC devices media query */
+@media screen and (min-width: 1080px) {
+  div.responsive {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  h1 {
+    background-color: teal;
+    font-family: 'Courier New', Courier, monospace;
+    width: auto;
+  }
+  p {
+    text-align: center;
+    font: 22px serif;
+    padding: 3px;
+    margin-bottom: 3em;
+    color: black;
+  }
+  button {
+    color: white;
+  }
+  input:focus {
+    border-color: #000;
+  }
+  input {
+    font: 18px monospace;
+    width: 90%;
+    box-sizing: border-box;
+    border: 3px solid darkslategray;
+    height: 2em;
+  }
+  input[type=submit] {
+    width: 20%;
+  }
+  form {
+    background-color: teal;
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input[type=text] {
+    width: 55%;
+    padding: 12px;
+    border: 1px solid darkslategray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  .nav {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 5px solid darkslategray;
+    background-color: teal;
+    text-transform: uppercase;
+  }
+  .nav li {
+    display:inline-block;
+  }
+  .nav a {
+    color:black;
+    display:inline-block;
+    padding:12px;
+  }
+  .personagem {
+    color: black;
+    background-color: teal;
+  }
+  .chivecc {
+    text-align: center;
+    background-color: teal;
+    color: black;
+    cursor: pointer;
+    width: 90%;
+    transition: .1s;
+    border: 5px inset darkslategray;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
