@@ -14,18 +14,52 @@
   </head>
   <body>
     <header>
-      <!--  -->
-      
+      <!-- Adding a navigation bar -->
+      <nav id="navigation">
+        <span><a href="#">Cook Book</a></span>
+        <span><a href="username.html">User Page</a></span>
+      </nav>
     </header>
     <!-- Creating a header for my cook book -->
     <h1>Welcome to Sean's Cook book!</h1>
     <!-- Informing the user of what the purpose of this cook book is about -->
     <p>The purpose of this cookbook is to help those insert ingredient(s) in either a new meal entree, a current meal entree, or remove from a current meal entree</p>
     <p>You can also create a new user as well by just typing in your name for faster history browsing of your current progress!</p>
-    <p>Please select an option below to either create, gather, update, or delete ingredient(s)</p>
+    <p>Please select an option below in the dropdown button to either create, gather, update, or delete ingredient(s)</p>
     <p>If you would like to create a user account, please go to my 'User' page and we can set that up for you as well!</p>
 
+    <!-- Creating a drop down menu of the ingredient options -->
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Select an option</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#newIngredient">Create new ingredient</a>
+        <a href="#showIngredients">Show all ingredients</a>
+        <a href="#updateIngredient">Update an ingredient</a>
+        <a href="#deleteIngredient">Delete an ingredient</a>
+      </div>
+    </div>
 
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
 
   </body>
 </html>
