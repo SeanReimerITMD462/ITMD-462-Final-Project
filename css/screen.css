@@ -2,13 +2,6 @@
       Major Sixth Modular Scale:
       http://www.modularscale.com/?22&px&1.667&web&text
     */
-body {
-  line-height: 1.182em; /* 26px / ~ 120% */
-  text-rendering: optimizeLegibility;
-  font-size: 16px;
-  background-color: lightgray;
-  padding: 10px;
-  }
 html {
   text-align: center;
   }
@@ -27,13 +20,13 @@ h1 {
 p {
   text-align: center;
   font: 30px serif;
-  font-style: italic;
   padding: 2px;
   margin-bottom: 2em;
   color: black;
 }
 /* HTML user input form */
 form {
+  font: 30px serif;
   margin: 0 auto;
   width: fit-content;
   text-align: center;
